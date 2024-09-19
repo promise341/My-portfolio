@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 20px;
+            padding: 0;
+            background-size:cover;
+            background-position: center;
+            text-align: center;
+          
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background-color:bisque;
+            border-radius: 10px;
+            box-shadow: 0 0 20px;
+            border-style: hidden;
+            display: grid;
+           grid-template-columns: 1fr 1fr; 
+  }
+  .gold:hover{background-color: pink;
+  }
+  .gold {
+    background-color: white;
+    width: 70px;
+    border-radius: 10px;
+  }
+  textarea {
+    border-radius: 10px;
+    border: 2px solid pink;
+    border-style: hidden;
+
+  }
+  input{
+    background-color: white;
+  ;
+  }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <form action="" >
+            <h1 style="color: black;">Restaurant Reservation Form</h1>
+                <label for="Full name"></label><br>
+                <input type="text" placeholder="Full Name"><br><br>
+                <label for="phone number"></label>
+                <input type="tel" placeholder="Phone number">
+                <label for="email"></label>
+                <input type="email" placeholder="Email" required><br><br>
+                <label for="date"></label>
+                <input type="date" placeholder="Date of preservation">
+                <label for="time"></label>
+                <input type="time" placeholder="Time of presentation">
+                <label for="number of guests"></label>
+                <input type="number" placeholder="Number of guests"><br><br><br>
+            <textarea name="" id="" cols="80" rows="6" placeholder="Special Requests"></textarea><br><br>
+            <textarea name="" id="" cols="80" rows="3" placeholder="Allergies or Dietary Restrictons"></textarea><br><br>
+            <textarea name="" id="" cols="80" rows="3" placeholder="Promo Code"></textarea><br><br>
+            <input type="radio"> I confirm that the above information is correct and i understand the restaurant reservation and cancellation poilicies.
+            <br><br>
+            <input type="submit" placeholder="submit" class="gold" onclick="alert( 'Hey, .thank you for making a booking at our restaurant. We looking forward to hosting you')">
+            <input type="reset">
+            
+        </form>
+    </div>
+</body>
+</html>
